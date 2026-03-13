@@ -1,0 +1,1 @@
+"""Options Strategy Assistant package."""
