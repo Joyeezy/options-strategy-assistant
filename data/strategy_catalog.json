@@ -1,0 +1,2189 @@
+[
+  {
+    "strategy_id": "strategy-056",
+    "name": "反转套利",
+    "name_en": "Reversal Arbitrage",
+    "strategy_family": "套利",
+    "objective_tags": [
+      "套利"
+    ],
+    "direction_tags": [
+      "套利"
+    ],
+    "volatility_tags": [
+      "波动率中性",
+      "定价偏差"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "需卖空现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 1,
+    "risk_label": "1 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（套利价差，固定收益）",
+    "max_loss": "有限（接近零风险）",
+    "breakeven": "无传统盈亏平衡点，到期收益锁定为股票卖空价 + 权利金净支出 - 行权价",
+    "margin_summary": "需要卖空现货配合，对账户权限和保证金更敏感。",
+    "greeks": "Delta≈0，Gamma≈0，Theta≈0，Vega≈0",
+    "summary": "更适合关注定价偏差的专业账户，收益主要来自执行效率和成本控制。",
+    "risk_note": "套利并不等于无风险，流动性、滑点和交易成本都可能吞掉利润。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略",
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-053",
+    "name": "盒式套利",
+    "name_en": "Box Spread",
+    "strategy_family": "套利",
+    "objective_tags": [
+      "套利"
+    ],
+    "direction_tags": [
+      "套利"
+    ],
+    "volatility_tags": [
+      "波动率中性",
+      "定价偏差"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "机构/套利账户",
+    "capital_profile": "低杠杆套利型",
+    "risk_level": 1,
+    "risk_label": "1 级（极低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（无风险利差，扣除手续费）",
+    "max_loss": "有限（仅手续费，理论无亏损）",
+    "breakeven": "固定无风险收益，无传统盈亏平衡点，到期收益锁定为行权价差",
+    "margin_summary": "对成本、流动性和执行质量要求更高。",
+    "greeks": "Delta≈0，Gamma≈0，Theta≈0，Vega≈0",
+    "summary": "更适合关注定价偏差的专业账户，收益主要来自执行效率和成本控制。",
+    "risk_note": "套利并不等于无风险，流动性、滑点和交易成本都可能吞掉利润。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-055",
+    "name": "转换套利",
+    "name_en": "Conversion Arbitrage",
+    "strategy_family": "套利",
+    "objective_tags": [
+      "套利"
+    ],
+    "direction_tags": [
+      "套利"
+    ],
+    "volatility_tags": [
+      "波动率中性",
+      "定价偏差"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 1,
+    "risk_label": "1 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（套利价差，固定收益）",
+    "max_loss": "有限（接近零风险）",
+    "breakeven": "无传统盈亏平衡点，到期收益锁定为权利金净收入 + 行权价 - 股票买入价",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta≈0，Gamma≈0，Theta≈0，Vega≈0",
+    "summary": "更适合关注定价偏差的专业账户，收益主要来自执行效率和成本控制。",
+    "risk_note": "套利并不等于无风险，流动性、滑点和交易成本都可能吞掉利润。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略",
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-057",
+    "name": "垂直套利",
+    "name_en": "Vertical Arbitrage",
+    "strategy_family": "套利",
+    "objective_tags": [
+      "套利"
+    ],
+    "direction_tags": [
+      "套利"
+    ],
+    "volatility_tags": [
+      "波动率中性",
+      "定价偏差"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "机构/套利账户",
+    "capital_profile": "低杠杆套利型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（价差收敛收益）",
+    "max_loss": "有限（价差扩大损失）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "对成本、流动性和执行质量要求更高。",
+    "greeks": "Delta 中性，Gamma 中性，Theta 中性，Vega 中性",
+    "summary": "更适合关注定价偏差的专业账户，收益主要来自执行效率和成本控制。",
+    "risk_note": "套利并不等于无风险，流动性、滑点和交易成本都可能吞掉利润。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略"
+    ]
+  },
+  {
+    "strategy_id": "strategy-058",
+    "name": "水平套利",
+    "name_en": "Horizontal Arbitrage",
+    "strategy_family": "套利",
+    "objective_tags": [
+      "套利"
+    ],
+    "direction_tags": [
+      "套利"
+    ],
+    "volatility_tags": [
+      "波动率下行",
+      "定价偏差"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "机构/套利账户",
+    "capital_profile": "低杠杆套利型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（时间价值衰减收益）",
+    "max_loss": "有限（价差扩大损失）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "对成本、流动性和执行质量要求更高。",
+    "greeks": "Delta≈0，Gamma≈0，Theta>0，Vega<0",
+    "summary": "更适合关注定价偏差的专业账户，收益主要来自执行效率和成本控制。",
+    "risk_note": "套利并不等于无风险，流动性、滑点和交易成本都可能吞掉利润。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略"
+    ]
+  },
+  {
+    "strategy_id": "strategy-051",
+    "name": "保护性看涨",
+    "name_en": "Protective Call",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "风险对冲"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "需卖空现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（标的跌至 0）",
+    "max_loss": "有限（行权价 - 现货卖出价 + 权利金）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "需要卖空现货配合，对账户权限和保证金更敏感。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合已有现货仓位的风险管理场景，用结构化期权换取下行保护或波动缓冲。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-050",
+    "name": "保护性看跌",
+    "name_en": "Protective Put",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "风险对冲"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "无限（标的上涨无上限）",
+    "max_loss": "有限（现货买入价 - 行权价 + 权利金）",
+    "breakeven": "股票买入价 + 支付的看跌期权权利金(p)",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合已有现货仓位的风险管理场景，用结构化期权换取下行保护或波动缓冲。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-054",
+    "name": "备兑看跌",
+    "name_en": "Covered Put",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "收益增强"
+    ],
+    "direction_tags": [
+      "看跌",
+      "震荡",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "需卖空现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（权利金收入 + 标的下跌收益）",
+    "max_loss": "有限（标的上涨至行权价以上的损失）",
+    "breakeven": "股票卖空价 + 收取的看跌期权权利金(p)",
+    "margin_summary": "需要卖空现货配合，对账户权限和保证金更敏感。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合已有持仓想增厚收益的人群，但要接受上行被限制或现货继续波动。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-052",
+    "name": "领口策略",
+    "name_en": "Collar",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "风险对冲"
+    ],
+    "direction_tags": [
+      "震荡",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（高行权价 - 现货买入价 + 净权利金）",
+    "max_loss": "有限（现货买入价 - 低行权价 + 净权利金）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta 小幅正，Gamma 中性，Theta 中性，Vega 中性",
+    "summary": "适合已有现货仓位的风险管理场景，用结构化期权换取下行保护或波动缓冲。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-007",
+    "name": "熊市看涨价差",
+    "name_en": "Bear Call Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（高行权价 - 低行权价 - 净权利金收入）",
+    "breakeven": "低行权价(s1) + 净权利金收入",
+    "margin_summary": "需要缴纳价差保证金，净权利金可部分抵减。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看跌的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-008",
+    "name": "熊市看跌价差",
+    "name_en": "Bear Put Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（高行权价 - 低行权价 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "高行权价(s2) - 净权利金支出",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma 中性，Theta 中性，Vega 中性",
+    "summary": "适合偏看跌的市场判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-005",
+    "name": "牛市看涨价差",
+    "name_en": "Bull Call Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（高行权价 - 低行权价 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "低行权价(s1) + 净权利金支出",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma 中性，Theta 中性，Vega 中性",
+    "summary": "适合偏看涨的市场判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-006",
+    "name": "牛市看跌价差",
+    "name_en": "Bull Put Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（高行权价 - 低行权价 - 净权利金收入）",
+    "breakeven": "高行权价(s2) - 净权利金收入",
+    "margin_summary": "需要缴纳价差保证金，净权利金可部分抵减。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看涨的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-013",
+    "name": "看涨多头蝶式",
+    "name_en": "Long Call Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行",
+      "波动率中性"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（中间行权价 - 低行权价 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内负、两端正，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-019",
+    "name": "看涨多头鹰式",
+    "name_en": "Long Call Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行",
+      "波动率中性"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（中间行权价间距 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内负、两端正，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-014",
+    "name": "看跌多头蝶式",
+    "name_en": "Long Put Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行",
+      "波动率中性"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（高行权价 - 中间行权价 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内负、两端正，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-020",
+    "name": "看跌多头鹰式",
+    "name_en": "Long Put Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌",
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（中间行权价间距 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内负、两端正，Theta>0，Vega<0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-017",
+    "name": "铁蝶式",
+    "name_en": "Iron Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（行权价间距 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-023",
+    "name": "铁鹰式",
+    "name_en": "Iron Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 2,
+    "risk_label": "2 级（低风险）",
+    "risk_bucket": "低风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（行权价间距 - 净权利金收入）",
+    "breakeven": "上行：卖出看涨行权价 + 净权利金收入",
+    "margin_summary": "公开版暂未细化保证金规则，实盘前需按券商规则复核。",
+    "greeks": "Delta≈0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1004",
+    "name": "VIX/SPY 对冲头寸",
+    "name_en": "",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "高波动"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "双向高上限，VIX 与 SPY 任一出现大幅单边运动即可获得高额收益",
+    "max_loss": "有限，最高为支付的总权利金",
+    "breakeven": "动态双标的盈亏平衡，两者任一出现大幅波动即可实现盈利",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "公开版待补充",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1002",
+    "name": "买入 VIX 看涨期权",
+    "name_en": "Long VIX Call",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "极高上限，VIX 随市场暴跌大幅飙升时收益无明确上限",
+    "max_loss": "有限，最高为支付的全部权利金",
+    "breakeven": "VIX期货行权价 + 支付的权利金",
+    "margin_summary": "以支付权利金为主，一般无追加保证金。",
+    "greeks": "公开版待补充",
+    "summary": "适合偏看涨的市场判断，更受益于隐含波动率抬升或价格摆动放大。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-001",
+    "name": "买入看涨",
+    "name_en": "Long Call",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的上涨无上限）",
+    "max_loss": "有限（仅损失支付的权利金）",
+    "breakeven": "行权价(s) + 看涨期权权利金(c)",
+    "margin_summary": "以支付权利金为主，一般无追加保证金。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看涨的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-003",
+    "name": "买入看跌",
+    "name_en": "Long Put",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（标的跌至 0，行权价 - 权利金）",
+    "max_loss": "有限（仅损失支付的权利金）",
+    "breakeven": "行权价(s) - 看跌期权权利金(p)",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看跌的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1005",
+    "name": "领圈策略",
+    "name_en": "Collar Strategy",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限，最高为卖出看涨行权价 - 股票买入价 + 净权利金收入（或-净权利金支出）",
+    "max_loss": "有限，最高为股票买入价 - 买入看跌行权价 + 净权利金支出（或-净权利金收入）",
+    "breakeven": "股票买入价 + 支付的净权利金（或-收取的净权利金）",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "公开版待补充",
+    "summary": "适合区间震荡或横盘判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-043",
+    "name": "合成多头看涨",
+    "name_en": "Synthetic Long Call",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的上涨无上限）",
+    "max_loss": "有限（行权价 - 现货价 + 权利金）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合中性或结构化表达，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-044",
+    "name": "合成多头看跌",
+    "name_en": "Synthetic Long Put",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（标的跌至 0）",
+    "max_loss": "有限（现货价 - 行权价 + 权利金）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合中性或结构化表达，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-048",
+    "name": "合成宽跨式",
+    "name_en": "Synthetic Strangle",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的大涨 / 大跌）",
+    "max_loss": "有限（权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-047",
+    "name": "合成跨式",
+    "name_en": "Synthetic Straddle",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的大涨 / 大跌）",
+    "max_loss": "有限（权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-059",
+    "name": "双限策略",
+    "name_en": "Collar with Protection",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "风险对冲"
+    ],
+    "direction_tags": [
+      "看涨",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（行权价上限 - 保护成本）",
+    "max_loss": "有限（保护价下限）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta>0，Gamma 中性，Theta 中性，Vega>0",
+    "summary": "适合已有现货仓位的风险管理场景，用结构化期权换取下行保护或波动缓冲。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "补充策略"
+    ]
+  },
+  {
+    "strategy_id": "strategy-049",
+    "name": "备兑看涨",
+    "name_en": "Covered Call",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "收益增强"
+    ],
+    "direction_tags": [
+      "看涨",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（行权价 - 现货买入价 + 权利金）",
+    "max_loss": "有限（现货买入价 - 权利金，标的跌至 0）",
+    "breakeven": "股票买入价 - 收取的看涨期权权利金(c)",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合已有持仓想增厚收益的人群，但要接受上行被限制或现货继续波动。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1003",
+    "name": "VIX 看跌期权后式价差",
+    "name_en": "VIX Put Backspread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限，VIX 大幅下跌时实现，最高为行权价差",
+    "max_loss": "有限，VIX 到期等于低行权价时实现最大亏损",
+    "breakeven": "下行：低行权价 - (高行权价-低行权价 - 净权利金收入)",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "公开版待补充",
+    "summary": "适合中性或结构化表达，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-027",
+    "name": "看涨反向比率价差",
+    "name_en": "Call Ratio Backspread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的大幅上涨）",
+    "max_loss": "有限（行权价间距 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看涨的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1001",
+    "name": "看涨期权反向价差",
+    "name_en": "Call Backspread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌",
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限，标的价格大幅上涨时，超额买入的期权带来无限上行收益",
+    "max_loss": "有限，标的到期等于 s2 时实现最大亏损",
+    "breakeven": "下行：低行权价(s1) + 净权利金收入/n1",
+    "margin_summary": "需要缴纳价差保证金，净权利金可部分抵减。",
+    "greeks": "公开版待补充",
+    "summary": "适合区间震荡或横盘判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-028",
+    "name": "看跌反向比率价差",
+    "name_en": "Put Ratio Backspread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（标的跌至 0）",
+    "max_loss": "有限（行权价间距 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看跌的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-033",
+    "name": "多头看涨对角价差",
+    "name_en": "Long Diagonal Call",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（标的到期在卖出行权价附近）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合中性或结构化表达，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-035",
+    "name": "多头看跌对角价差",
+    "name_en": "Long Diagonal Put",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（标的到期在卖出行权价附近）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合中性或结构化表达，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1006",
+    "name": "对角价差策略",
+    "name_en": "Diagonal Spread",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "中性"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限，取决于近期期权到期后远期期权的剩余价值，隐含波动率与标的价格匹配度决定收益上限",
+    "max_loss": "有限，最高为建立头寸的净权利金支出",
+    "breakeven": "动态变化，取决于行权价与到期日的匹配，近期到期时标的价格等于卖出行权价实现最大收益",
+    "margin_summary": "需要保证金，但组合腿可提供一定冲抵。",
+    "greeks": "公开版待补充",
+    "summary": "适合中性或结构化表达，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet2"
+    ]
+  },
+  {
+    "strategy_id": "strategy-037",
+    "name": "看涨日历价差",
+    "name_en": "Call Calendar Spread",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨",
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（到期标的在同行权价附近）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "动态变化，近期到期时标的价格等于行权价实现最大收益",
+    "margin_summary": "需要保证金，但组合腿可提供一定冲抵。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看涨的市场判断，更受益于隐含波动率抬升或价格摆动放大。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-038",
+    "name": "看跌日历价差",
+    "name_en": "Put Calendar Spread",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌",
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（到期标的在同行权价附近）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "动态变化，近期到期时标的价格等于行权价实现最大收益",
+    "margin_summary": "需要保证金，但组合腿可提供一定冲抵。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看跌的市场判断，更受益于隐含波动率抬升或价格摆动放大。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-029",
+    "name": "Strap",
+    "name_en": "带式策略，看涨比率跨式",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（大涨盈利更多，大跌也盈利）",
+    "max_loss": "有限（支付的权利金总额）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看涨的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-030",
+    "name": "Strip",
+    "name_en": "条式策略，看跌比率跨式",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（大跌盈利更多，大涨也盈利）",
+    "max_loss": "有限（支付的权利金总额）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合偏看跌的市场判断，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-011",
+    "name": "买入宽跨式",
+    "name_en": "Long Strangle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的大涨 / 大跌均盈利）",
+    "max_loss": "有限（支付的双份虚值权利金）",
+    "breakeven": "上行：高行权价(s2) + 总权利金支出(c2+p1)",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0（中性），Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-009",
+    "name": "买入跨式",
+    "name_en": "Long Straddle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "无限（标的大涨 / 大跌均盈利）",
+    "max_loss": "有限（支付的双份权利金）",
+    "breakeven": "上行：行权价(s) + 总权利金支出(c+p)",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0（中性），Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-015",
+    "name": "空头看涨蝶式",
+    "name_en": "Short Call Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（中间行权价 - 低行权价 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内正、两端负，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-021",
+    "name": "空头看涨鹰式",
+    "name_en": "Short Call Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（中间行权价间距 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内正、两端负，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-016",
+    "name": "空头看跌蝶式",
+    "name_en": "Short Put Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（高行权价 - 中间行权价 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内正、两端负，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-022",
+    "name": "空头看跌鹰式",
+    "name_en": "Short Put Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌",
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（中间行权价间距 - 净权利金收入）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma 区间内正、两端负，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-018",
+    "name": "空头铁蝶式",
+    "name_en": "Short Iron Butterfly",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（行权价间距 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-024",
+    "name": "空头铁鹰式",
+    "name_en": "Short Iron Condor",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率上行",
+      "高波动"
+    ],
+    "time_value_profile": "买时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限（行权价间距 - 净权利金支出）",
+    "max_loss": "有限（净权利金支出）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma>0，Theta<0，Vega>0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更受益于隐含波动率抬升或价格摆动放大。建仓后需要行情尽快兑现，时间并不站在你这一边。",
+    "risk_note": "即使方向判断正确，也可能被时间损耗拖累，需要给行情留出兑现窗口。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-extra-1000",
+    "name": "蝶式价差",
+    "name_en": "Butterfly Spread",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 3,
+    "risk_label": "3 级（中风险）",
+    "risk_bucket": "中风险",
+    "max_profit": "有限，为(中行权价s2-s1) - 净权利金支出",
+    "max_loss": "有限，最高为支付的净权利金支出",
+    "breakeven": "下行：低行权价(s1) + 净权利金支出",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "公开版待补充",
+    "summary": "适合区间震荡或横盘判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": true,
+    "source_sheets": [
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-004",
+    "name": "卖出看跌",
+    "name_en": "Short Put",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨",
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（仅收取的权利金）",
+    "max_loss": "有限（标的跌至 0，行权价 - 权利金）",
+    "breakeven": "行权价(s) - 收取的权利金(p)",
+    "margin_summary": "裸卖方保证金较高，且会随标的波动动态变化。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看涨的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "需要持续盯住保证金占用，极端波动时回撤可能快于预期。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-041",
+    "name": "合成多头现货",
+    "name_en": "Synthetic Long Stock",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "无限（标的上涨无上限）",
+    "max_loss": "有限（标的跌至 0）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈1，Gamma≈0，Theta≈0，Vega≈0",
+    "summary": "适合偏看涨的市场判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "先确认最大亏损是否真的可承受，再考虑收益空间和执行复杂度。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-045",
+    "name": "合成备兑看涨",
+    "name_en": "Synthetic Covered Call",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "收益增强"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "需持有现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（行权价 - 现货价 + 权利金）",
+    "max_loss": "有限（标的跌至 0）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "由现货持仓覆盖义务，核心资金占用在现货仓位。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合已有持仓想增厚收益的人群，但要接受上行被限制或现货继续波动。",
+    "risk_note": "风险来自期权腿和现货腿的共同暴露，不能只盯权利金本身。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-025",
+    "name": "看涨比率价差",
+    "name_en": "Call Ratio Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（行权价间距 + 净权利金收支）",
+    "max_loss": "无限（标的大幅上涨）",
+    "breakeven": "下行：低行权价(s1) + 净权利金支出/n1",
+    "margin_summary": "公开版暂未细化保证金规则，实盘前需按券商规则复核。",
+    "greeks": "Delta 小幅正，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看涨的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-026",
+    "name": "看跌比率价差",
+    "name_en": "Put Ratio Spread",
+    "strategy_family": "方向价差",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（行权价间距 + 净权利金收支）",
+    "max_loss": "有限（标的跌至 0）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta 小幅负，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看跌的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-039",
+    "name": "看涨对角比率价差",
+    "name_en": "Diagonal Call Ratio",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（标的到期在卖出行权价附近）",
+    "max_loss": "无限（标的大幅上涨）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看涨的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-040",
+    "name": "看跌对角比率价差",
+    "name_en": "Diagonal Put Ratio",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（标的到期在卖出行权价附近）",
+    "max_loss": "有限（标的跌至 0）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看跌的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-034",
+    "name": "空头看涨对角价差",
+    "name_en": "Short Diagonal Call",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "无限（标的大幅上涨）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合中性或结构化表达，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-036",
+    "name": "空头看跌对角价差",
+    "name_en": "Short Diagonal Put",
+    "strategy_family": "时间价差",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（净权利金收入）",
+    "max_loss": "有限（标的大幅下跌）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合中性或结构化表达，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-031",
+    "name": "看涨比率宽跨式",
+    "name_en": "Ratio Call Strangle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（净权利金收入 + 标的下跌收益）",
+    "max_loss": "无限（标的大幅上涨）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看跌的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-032",
+    "name": "看跌比率宽跨式",
+    "name_en": "Ratio Put Strangle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "看涨"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 4,
+    "risk_label": "4 级（中高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（净权利金收入 + 标的上涨收益）",
+    "max_loss": "有限（标的跌至 0）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta>0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看涨的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "收益常来自时间衰减，但尾部行情会让小赚大亏的结构迅速暴露。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-002",
+    "name": "卖出看涨",
+    "name_en": "Short Call",
+    "strategy_family": "单腿方向",
+    "objective_tags": [
+      "方向表达"
+    ],
+    "direction_tags": [
+      "看跌",
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 5,
+    "risk_label": "5 级（高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（仅收取的权利金）",
+    "max_loss": "无限（标的上涨无上限）",
+    "breakeven": "行权价(s) + 收取的权利金(c)",
+    "margin_summary": "裸卖方保证金较高，且会随标的波动动态变化。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合偏看跌的市场判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-042",
+    "name": "合成空头现货",
+    "name_en": "Synthetic Short Stock",
+    "strategy_family": "合成复制",
+    "objective_tags": [
+      "仓位替代"
+    ],
+    "direction_tags": [
+      "看跌"
+    ],
+    "volatility_tags": [
+      "波动率中性"
+    ],
+    "time_value_profile": "时间中性",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "组合权利金型",
+    "risk_level": 5,
+    "risk_label": "5 级（高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（标的跌至 0）",
+    "max_loss": "无限（标的上涨无上限）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "通常以组合建仓成本为主，额外保证金压力相对有限。",
+    "greeks": "Delta≈-1，Gamma≈0，Theta≈0，Vega≈0",
+    "summary": "适合偏看跌的市场判断，对波动率的依赖相对中性。收益更多来自结构设计，而不是单纯赚取时间衰减。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-046",
+    "name": "合成备兑看跌",
+    "name_en": "Synthetic Covered Put",
+    "strategy_family": "对冲/收益增强",
+    "objective_tags": [
+      "收益增强"
+    ],
+    "direction_tags": [
+      "看涨",
+      "看跌",
+      "对冲"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "需卖空现货",
+    "capital_profile": "现货覆盖型",
+    "risk_level": 5,
+    "risk_label": "5 级（高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（现货价 - 行权价 + 权利金）",
+    "max_loss": "无限（标的上涨无上限）",
+    "breakeven": "公开版待补充",
+    "margin_summary": "需要卖空现货配合，对账户权限和保证金更敏感。",
+    "greeks": "Delta<0，Gamma<0，Theta>0，Vega<0",
+    "summary": "适合已有持仓想增厚收益的人群，但要接受上行被限制或现货继续波动。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表"
+    ]
+  },
+  {
+    "strategy_id": "strategy-012",
+    "name": "卖出宽跨式",
+    "name_en": "Short Strangle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 5,
+    "risk_label": "5 级（高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（收取的双份虚值权利金）",
+    "max_loss": "无限（标的突破区间大涨 / 大跌）",
+    "breakeven": "上行：高行权价(s2) + 总权利金收入(c2+p1)",
+    "margin_summary": "公开版暂未细化保证金规则，实盘前需按券商规则复核。",
+    "greeks": "Delta≈0（中性），Gamma<0，Theta>0，Vega<0",
+    "summary": "适合区间震荡或横盘判断，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  },
+  {
+    "strategy_id": "strategy-010",
+    "name": "卖出跨式",
+    "name_en": "Short Straddle",
+    "strategy_family": "波动率组合",
+    "objective_tags": [
+      "波动率交易"
+    ],
+    "direction_tags": [
+      "震荡",
+      "双向波动"
+    ],
+    "volatility_tags": [
+      "波动率下行"
+    ],
+    "time_value_profile": "卖时间",
+    "holding_requirement": "无持仓要求",
+    "capital_profile": "保证金型",
+    "risk_level": 5,
+    "risk_label": "5 级（高风险）",
+    "risk_bucket": "高风险",
+    "max_profit": "有限（收取的双份权利金）",
+    "max_loss": "无限（标的大涨 / 大跌均亏损）",
+    "breakeven": "上行：行权价(s) + 总权利金收入(c+p)",
+    "margin_summary": "公开版暂未细化保证金规则，实盘前需按券商规则复核。",
+    "greeks": "Delta≈0（中性），Gamma<0，Theta>0，Vega<0",
+    "summary": "适合预期将出现较大波动但方向不明确的场景，更适合卖波动或等待波动率回落。时间衰减通常是收益来源，但尾部风险也会更集中。",
+    "risk_note": "理论最大亏损不封顶，必须先控制仓位、保证金和止损纪律。",
+    "starter_friendly": false,
+    "source_sheets": [
+      "完整策略表",
+      "Sheet1"
+    ]
+  }
+]
