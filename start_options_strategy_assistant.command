@@ -2,9 +2,10 @@
 
 set -euo pipefail
 
-PROJECT_DIR="/Users/linjiong/Documents/Playground/options-strategy-assistant"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="${SCRIPT_DIR}"
 PROJECT_VENV="${PROJECT_DIR}/.venv"
-FALLBACK_VENV="/Users/linjiong/Documents/Playground/finance-query-local/.venv"
+FALLBACK_VENV="$(cd "${PROJECT_DIR}/.." && pwd)/finance-query-local/.venv"
 PORT_FILE="${PROJECT_DIR}/.streamlit-active-port"
 
 cd "$PROJECT_DIR"
