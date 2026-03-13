@@ -41,7 +41,8 @@
 ## 本地启动
 
 ```bash
-cd /Users/linjiong/Documents/Playground/options-strategy-assistant
+git clone https://github.com/Joyeezy/options-strategy-assistant.git
+cd options-strategy-assistant
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
